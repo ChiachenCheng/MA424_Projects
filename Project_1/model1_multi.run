@@ -1,0 +1,15 @@
+reset;
+
+option solver gurobi;
+
+include model1_multi.mod;
+
+include project_data.dat;
+
+solve;
+
+display x;
+display y;
+display z;
+display unfulfill;
+display supply;
